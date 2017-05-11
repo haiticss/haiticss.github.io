@@ -16,6 +16,10 @@ google_analytics: UA-97633338-1
 
 # Collections
 collections:
+  docs-color-schemes:
+    label: color-schemes
+    output: true
+    permalink: /docs/color-schemes/:name
   docs-foundations:
     label: foundations
     output: true
