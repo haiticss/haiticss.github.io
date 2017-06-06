@@ -6,12 +6,14 @@
   @include o-docs__main--bg();
 
   &::after {
+    white-space: nowrap;
     display: table-header-group;
     @include o-docs__main--txt();
   }
 
   .o-pack__item {
     position: relative;
+    padding-top: $f-space;
     @include o-docs__secondary--outline();
     @include o-docs__secondary--bg();
 
