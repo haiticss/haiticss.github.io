@@ -1,100 +1,97 @@
 ---
 ---
 
-/* ==========================================================================
-   HAITICSS.IO STYLESHEET
-   ========================================================================== */
-
-/*
- * This project is possible thanks to the inspiration and code references from:
+/* -------------------------------------------------------------------------
+ * CONFIG
  *
- * - BEM .................. getbem.com
- * - ITCSS ................ itcss.io
- * - InuitCSS ............. github.com/inuitcss | inuitcss.com
- * - Atomic Design ........ atomicdesign.bradfrost.com
- * - Rizzo ................ rizzo.lonelyplanet.com
- * - Bootstrap ............ getbootstrap.com
- * - Harry Roberts ........ @csswizardy
- * - Brad Frost ........... @brad_frost
- * - Mark Otto ............ @mdo
- * - Ian Feather .......... @ianfeather
- * - Christoph Reinartz ... @pristenprinz
- * - and many others ...
+ * Main configuration, settings, foundations and tools. No CSS output from
+ * them. Should be modified with caution. Values should be expressed in PX,
+ * if you plan to convert them into relative units, please, do so on usage.
+ *
+ * settings ................... Main configuration, settings and core functions
+ * foundations ................ Visual language expressed into SASS vars
+ * tools ...................... Helper mixins for mq, quantities, ...
  *
  */
 
-
-/* ==========================================================================
- * SETTINGS
- * Project configuration, functions and variables
- *
- * core ................... Core and setup settings
- * config ................. Global configuration: env, paths
- * core functions ......... SASS core functions (core- prefixed)
- * foundations ............ Design foundations vars
-   ========================================================================== */
-
-@import "{{site.haiticss-path}}src/settings/settings__core";
 @import "settings/settings__config";
-@import "{{site.haiticss-path}}src/settings/settings__config";
-@import "{{site.haiticss-path}}src/settings/settings__core-functions";
+@import "{{site.haiticss-path}}src/settings/settings";
 @import "foundations/foundations";
 @import "{{site.haiticss-path}}src/foundations/foundations";
 @import "{{site.haiticss-path}}src/tools/tools";
 
-/* ==========================================================================
- * CONTENT
-   ========================================================================== */
 
+/* -------------------------------------------------------------------------
+ * BASE
+ *
+ * Main HTML elements reset and setup, and base material
+ *
+ * generic .................... Normalize browser behaviour
+ * elements ................... HTML elements default appearance
+ * material ................... Class based elements: headings, icons, ...
+ *
+ */
 
 @import "{{site.haiticss-path}}src/generic/generic";
 @import "{{site.haiticss-path}}src/elements/elements";
-
 @import "{{site.haiticss-path}}src/material/material";
-@import "material/material";
+
+
+/* -------------------------------------------------------------------------
+ * ABSTRACTIONS
+ *
+ * Reusable design abstractions and patterns
+ *
+ * objects .................... Unstyled design patterns
+ * animations ................. Movement and transition patterns
+ * color-schemes .............. Color combination schemes
+ *
+ */
 
 @import "{{site.haiticss-path}}src/objects/objects";
 @import "objects/objects";
-
+@import "{{site.haiticss-path}}src/animations/animations";
 @import "{{site.haiticss-path}}src/color-schemes/color-schemes";
 @import "color-schemes/color-schemes";
 
-@import "components/components";
 
+/* -------------------------------------------------------------------------
+ * CONTENT
+ *
+ * Tangible content. Empty group on haiticss. Organize and put your
+ * content here. A proposal on how to organize your content could be:
+ *
+ * components ................. Abstract named components
+ * widgets .................... Data and business driven components
+ * templates .................. Template layouts
+ * renderings ................. Concrete use cases of components and widgets
+ * pages ...................... Concrete use cases of templates
+ *
+ */
+
+@import "components/components";
 @import "templates/templates";
+
+
+/* -------------------------------------------------------------------------
+ * OVERRIDES
+ *
+ * Safe belt scopes and utilities
+ *
+ * scopes ..................... Untrusted or corrupted sources under control
+ * utilities .................. Helper classes with important statements
+ *
+ */
 
 @import "{{site.haiticss-path}}src/utilities/utilities";
 @import "utilities/utilities";
 
-html {
-  background-color: $f-color__brand-primary--ultra-light;
-}
 
-a {
-  color: $f-color__brand-primary--dark;
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
-}
+/* -------------------------------------------------------------------------
+ * SHAME
+ *
+ * Tests and technical debt
+ *
+ */
 
-p + p {
-  margin-top: $f-space--small * -1;
-}
-
-.o-flag__img {
-  > img {
-    width: auto;
-  }
-}
-.u-pv--large {
-  padding-bottom: $f-space--large !important;
-  padding-top: $f-space--large !important;
-}
-
-.u-mb--medium {
-  margin-bottom: $f-space--medium !important;
-}
-.u-mb--large {
-  margin-bottom: $f-space--large !important;
-}
+@import "shame";

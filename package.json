@@ -1,5 +1,22 @@
 {
-  "devDependencies": {
-    "haiticss": "https://github.com/haiticss/haiticss.git"
-  }
+  "name": "@haiticss/haiticss.github.io",
+  "version": "1.0.0-alpha",
+  "description": "haiticss site",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haiticss/haiticss.github.io.git"
+  },
+  "keywords": [
+    "sass",
+    "bem",
+    "itcss",
+    "bemit",
+    "haiticss"
+  ],
+  "author": "Daniel Fornells",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/haiticss/haiticss/issues"
+  },
+  "homepage": "https://haiticss.io"
 }
