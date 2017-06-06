@@ -47,9 +47,41 @@ name: pack
     <div class="cs-light c-code-snippet u-mb--large">
         {% highlight html %}
         <div class="o-pack o-pack--space-medium">
-            <div class="o-pack__img"></div>
-            <div class="o-pack__body"></div>
+            <div class="o-pack__item"></div>
+            <div class="o-pack__item"></div>
+            <div class="o-pack__item"></div>
+            <div class="o-pack__item"></div>
         </div>{% endhighlight %}
+    </div>
+</div>
+
+
+<h2 class="m-heading--small">Alignment modifiers</h2>
+<hr>
+<p>Sets the item vertical alignment.</p>
+
+<select name="o-pack--space" id="o-layout__select--alignment" class="js-select-replacer" data-select-replacer__target="#o-pack__playground--alignment">
+    <option value="o-pack--top" selected>top</option>
+    <option value="o-pack--middle">middle</option>
+    <option value="o-pack--bottom">bottom</option>
+</select>
+
+
+<div id="o-pack__playground--alignment">
+    <div class="o-pack o-pack--top o-pack--debug u-mb--medium" data-debug__text=".o-pack.o-pack--top">
+        <div class="o-pack__item" data-debug__text=".o-pack__item">Lorem</div>
+        <div class="o-pack__item" data-debug__text=".o-pack__item">Lorem ipsum dolor sit amet</div>
+        <div class="o-pack__item" data-debug__text=".o-pack__item">Lorem ipsum</div>
+        <div class="o-pack__item" data-debug__text=".o-pack__item">Consecteur</div>
+    </div>
+    <div class="cs-light c-code-snippet u-mb--large">
+{% highlight html %}
+<div class="o-pack o-pack--top">
+    <div class="o-pack__item"></div>
+    <div class="o-pack__item"></div>
+    <div class="o-pack__item"></div>
+    <div class="o-pack__item"></div>
+</div>{% endhighlight %}
     </div>
 </div>
 
@@ -64,13 +96,13 @@ name: pack
     <div class="o-pack__item" data-debug__text=".o-pack__item">4</div>
 </div>
 <div class="cs-light c-code-snippet u-mb--large">
-    {% highlight html %}
-    <div class="o-pack o-pack--reverse">
-        <div class="o-pack__item">1</div>
-        <div class="o-pack__item">2</div>
-        <div class="o-pack__item">3</div>
-        <div class="o-pack__item">4</div>
-    </div>{% endhighlight %}
+{% highlight html %}
+<div class="o-pack o-pack--reverse">
+    <div class="o-pack__item">1</div>
+    <div class="o-pack__item">2</div>
+    <div class="o-pack__item">3</div>
+    <div class="o-pack__item">4</div>
+</div>{% endhighlight %}
 </div>
 
 
@@ -84,11 +116,11 @@ name: pack
     <div class="o-pack__item">Lorem</div>
 </div>
 <div class="cs-light c-code-snippet u-mb--large">
-    {% highlight html %}
-    <div class="o-pack o-pack--auto">
-        <div class="o-pack__item">1</div>
-        <div class="o-pack__item">2</div>
-        <div class="o-pack__item">3</div>
-        <div class="o-pack__item">4</div>
-    </div>{% endhighlight %}
+{% highlight html %}
+<div class="o-pack o-pack--auto">
+    <div class="o-pack__item">1</div>
+    <div class="o-pack__item">2</div>
+    <div class="o-pack__item">3</div>
+    <div class="o-pack__item">4</div>
+</div>{% endhighlight %}
 </div>
