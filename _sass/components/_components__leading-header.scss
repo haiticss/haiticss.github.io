@@ -33,6 +33,11 @@
   margin-bottom: $g-reset__spacing--vertical;
 }
 
+.c-leading-header__slogan {
+  font-family: $f-font-family__accent;
+  padding-right: $f-space--small;
+}
+
 .c-leading-header__icon {
   fill: $f-color__brand-primary--ultra-light;
 }

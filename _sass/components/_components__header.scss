@@ -23,6 +23,10 @@
 }
 
 .c-header__slogan {
+
+  font-family: $f-font-family__accent;
+  padding-right: $f-space--small;
+
   @include t-mq($until: "xs") {
     display: none;
   }

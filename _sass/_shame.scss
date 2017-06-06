@@ -1,0 +1,23 @@
+
+
+html {
+  background-color: $f-color__brand-primary--ultra-light;
+}
+
+a {
+  color: $f-color__brand-primary--dark;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+p + p {
+  margin-top: $f-space--small * -1;
+}
+
+.o-flag__img {
+  > img {
+    width: auto;
+  }
+}
