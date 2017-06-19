@@ -1,0 +1,39 @@
+---
+layout: docs
+template: t-docs
+title: Utilities > SHADOWS
+name: shadows
+collection: docs-shadows
+---
+
+<h1 class="m-heading">utilities > SHADOWS</h1>
+<hr>
+
+<p>Shadow utilities are useful to give a 3D-like effect to our elements.</p>
+
+<select name="u-shadows" id="u-shadows__select" class="js-select-replacer"
+        data-select-replacer__target="#u-shadows__playground">
+    <option value="u-shadow--discrete" selected>discrete</option>
+    <option value="u-shadow--elevated">elevated</option>
+    <option value="u-shadow--sunken">sunken</option>
+</select>
+
+<div id="u-shadows__playground">
+
+    <div class="u-shadow--discrete u-utilities--debug u-mb--medium" data-debug__text=".u-shadow--discrete">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus libero velit, quis ultrices eros ultrices
+        vitae. Nullam eu urna turpis. Fusce blandit ex augue, vel malesuada enim condimentum quis. Pellentesque dapibus
+        dolor a mauris elementum consectetur. Sed gravida blandit rhoncus. Donec tristique tortor nec facilisis
+        tristique.
+    </div>
+
+    <div class="cs-light c-code-snippet u-mb--large">
+        {% highlight html %}
+        <div class="u-shadow--discrete">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus libero velit, quis ultrices eros
+            ultrices vitae. Nullam eu urna turpis. Fusce blandit ex augue, vel malesuada enim condimentum quis.
+            Pellentesque dapibus dolor a mauris elementum consectetur. Sed gravida blandit rhoncus. Donec tristique
+            tortor nec facilisis tristique.
+        </div>{% endhighlight %}
+    </div>
+</div>
